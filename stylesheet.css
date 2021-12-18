@@ -1,0 +1,85 @@
+body {
+    font-family: 'Lato', Sans-Serif;
+}
+
+.main {
+    background-image: url(https://images.unsplash.com/photo-1457369804613-52c61a468e7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    color: #ffffff;
+    overflow-y: scroll;
+    font-size: 24px;
+}
+
+.main::after {
+    content: "";
+    background-color: rgb(0, 0, 0, .8);
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#title, #description {
+    text-align: center;
+    font-size: 35px;
+    z-index: 2;
+    position: relative;
+}
+
+#description {
+    font-size: 25px
+}
+
+.main-content {
+    background-color: rgb(27, 27, 50, .9);
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: auto;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 0px -1px 10px 1px rgb(157, 255, 172);
+}
+
+#name, #email, #admnum, #number, #dropdown, #vaccineinfo, #comments {
+    display: block;
+    width: 100%;
+    height: 20px;
+    padding: 5px 10px;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+
+#comments {
+    min-height: 130px;
+}
+
+#submit{
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background: #37af65;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 0px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#submit:hover {
+    background: red;
+}

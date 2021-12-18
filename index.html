@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylesheet.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" type="text/css">
+    <title>Thank You For Filling The Form</title>
+</head>
+<body>
+    <div class="main">
+        <h1 id="title">International Indian School, Dammam <br><u> Survey Form For Offline Classes</u></h1>
+        <p id="description">Thank You for taking time to answer these questions</p>
+
+        <div class="main-content">
+            <div class="form-content">
+                <form id="survey-form">
+                    <label for="name" id="name-label">Name</label>
+                    <input id="name" type="text" required placeholder="Enter Here">
+                    
+                    <label for="email" id="email-label">Email</label>
+                    <input id="email" type="email" required placeholder="Enter Here">
+                    
+                    <label for="admnum" id="admnum-label">Admission Number</label>
+                    <input id="admnum" type="text" required placeholder="Enter Here">
+
+                    <label for="age" id="number-label">Age</label>
+                    <input id="number" type="number" min="1" max="19" required placeholder="Enter Here">
+                    
+                    <label for="vaccinetype" id="vaccinetype-label">Which Of The Following Vaccines Have You Taken?</label>
+                    <select id="dropdown" required>
+                        <option value="select-vaccine" disabled>Select Vaccine</option>
+                        <option value="pfizer-biontech">Pfizer-BioNTech</option>
+                        <option value="moderna">Moderna</option>
+                        <option value="oxford-astrazeneca">Oxford-AstraZeneca</option>
+                        <option value="johnson&johnson">Johnson & Johnson's Janssen</option>
+                    </select>
+
+                    <label for="vaccineinfo" id="vaccineinfo-label">How Many Total Doses Of Vaccine Have You Taken?</label>
+                    <select id="vaccineinfo" required>
+                        <<option value="select-the-number" disabled>Select The Number Of Doses</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3-booster">3 (Booster)</option>
+                    </select>
+
+                    <label for="comments" id="comments-label">Is There Anything Else We Should Know?</label>
+                    <textarea id="comments" rows="4" cols="50" placeholder="Type Here"></textarea>
+
+                    <button type="submit" id="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
