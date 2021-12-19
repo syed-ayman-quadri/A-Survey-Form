@@ -16,39 +16,55 @@
         <div class="main-content">
             <div class="form-content">
                 <form id="survey-form">
-                    <label for="name" id="name-label">Name</label>
-                    <input id="name" type="text" required placeholder="Enter Here">
-                    
-                    <label for="email" id="email-label">Email</label>
-                    <input id="email" type="email" required placeholder="Enter Here">
-                    
-                    <label for="admnum" id="admnum-label">Admission Number</label>
-                    <input id="admnum" type="text" required placeholder="Enter Here">
+                        <label for="name" id="name-label">Name</label>
+                        <input id="name" type="text" required placeholder="Enter Here">
 
-                    <label for="age" id="number-label">Age</label>
-                    <input id="number" type="number" min="1" max="19" required placeholder="Enter Here">
-                    
-                    <label for="vaccinetype" id="vaccinetype-label">Which Of The Following Vaccines Have You Taken?</label>
-                    <select id="dropdown" required>
-                        <option value="select-vaccine" disabled>Select Vaccine</option>
-                        <option value="pfizer-biontech">Pfizer-BioNTech</option>
-                        <option value="moderna">Moderna</option>
-                        <option value="oxford-astrazeneca">Oxford-AstraZeneca</option>
-                        <option value="johnson&johnson">Johnson & Johnson's Janssen</option>
-                    </select>
+                        <label for="email" id="email-label">Email</label>
+                        <input id="email" type="email" required placeholder="Enter Here">
 
-                    <label for="vaccineinfo" id="vaccineinfo-label">How Many Total Doses Of Vaccine Have You Taken?</label>
-                    <select id="vaccineinfo" required>
-                        <<option value="select-the-number" disabled>Select The Number Of Doses</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3-booster">3 (Booster)</option>
-                    </select>
+                        <label for="admnum" id="admnum-label">Admission Number</label>
+                        <input id="admnum" type="number" required placeholder="Enter Here">
 
-                    <label for="comments" id="comments-label">Is There Anything Else We Should Know?</label>
-                    <textarea id="comments" rows="4" cols="50" placeholder="Type Here"></textarea>
+                        <label for="age" id="number-label">Age</label>
+                        <input id="number" type="number" min="1" max="19" required placeholder="Enter Here">
 
-                    <button type="submit" id="submit">Submit</button>
+                        <label for="vaccinetype" id="vaccinetype-label">Which Of The Following Vaccines Have You Taken?</label>
+                        <select id="dropdown" required>
+                            <option value="select-vaccine" disabled>Select Vaccine</option>
+                            <option value="pfizer-biontech">Pfizer-BioNTech</option>
+                            <option value="moderna">Moderna</option>
+                            <option value="oxford-astrazeneca">Oxford-AstraZeneca</option>
+                            <option value="johnson&johnson">Johnson & Johnson's Janssen</option>
+                        </select>
+
+                    <div class="form-group-radio">
+                        <p id="dose-title">How Many Does Of The Vaccine Have You Taken?</p>
+                        <input id="1" type="radio" name="dose" value="1">
+                        <label for="1" id="radio-1-label">1</label><br>
+                        <input id="2" type="radio" name="dose" value="2">
+                        <label for="2" id="radio-2-label">2</label><br>
+                        <input id="3" type="radio" name="dose" value="2">
+                        <label for="3" id="radio-3-label" value="3">3 (Booster)</label>
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <p id="date-title">When Do You Think The School Should Reopen? 
+                            <span class="hint">(Check all that apply)</span>
+                        </p>
+                        <input id="jan2" type="checkbox" name="january 2, 2022" value="jan2">
+                        <label for="jan2" id="checkbox-jan2-label">January 2, 2022</label><br>
+                        <input id="jan9" type="checkbox" name="january 9, 2022" value="jan9">
+                        <label for="jan9" id="checkbox-jan9-label">January 9, 2022</label><br>
+                        <span id="margin-below">
+                        <input id="jan16" type="checkbox" name="january 16, 2022" value="jan16">
+                        <label for="jan16" id="checkbox-jan16-label" value="jan16">January 16, 2022</label>
+                        </span>
+                    </div>
+
+                        <label for="comments" id="comments-label">Is There Anything Else We Should Know?</label>
+                        <textarea id="comments" rows="4" cols="50" placeholder="Type Here"></textarea>
+
+                        <button type="submit" id="submit">Submit</button>
                 </form>
             </div>
         </div>

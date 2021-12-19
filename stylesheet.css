@@ -37,7 +37,7 @@ body {
 
 .main-content {
     background-color: rgb(27, 27, 50, .9);
-    max-width: 600px;
+    max-width: 650px;
     display: flex;
     flex-direction: column;
     padding: 40px;
@@ -63,6 +63,30 @@ body {
     margin-top: 10px;
 }
 
+#dropdown {
+    height: 35px;
+    width: 103%;
+}
+
+#dose-title {
+    margin-bottom: 3px;
+}
+
+#date-title {
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.hint {
+    margin-left: 0.25rem;
+    font-size: 0.9rem;
+    color: #e4e4e4;
+}
+
+#margin-below {
+    display: inline-block;
+    margin-bottom: 30px;
+}
 
 #comments {
     min-height: 130px;
